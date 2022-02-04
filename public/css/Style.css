@@ -6,6 +6,8 @@
 #content {
     padding: 0 0;
     background: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 #primary {
@@ -53,4 +55,8 @@ body, button, input, select, textarea {
 
 #imagepost{
     height: 20%;
+}
+
+#footer{
+    padding: 10%;
 }
