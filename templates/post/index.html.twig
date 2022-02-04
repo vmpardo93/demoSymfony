@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Post index{% endblock %}
+
+{% block body %}
+    <div id="posttitle">
+    {% for post in posts %}
+        <h1>{{ post.title }}</h1>
+    {% endfor %}
+    </div>
+    <div id="postprincipal">
+        <div id="listapost">
+            <ul>
+                {% for post in posts %}
+                    <li>{{ post.title }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div id="contentpost">
+            {% for post in posts %}
+            <div id="imagepost">
+                <img src="{{ post.image }}" alt="image" width="200px"/>
+            </div>
+            <div>
+                <h3>{{ post.autor }}</h3>
+            </div>
+            <div>
+                <p>{{ post.content }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <a href="{{ path('post_new') }}">Create new</a>
+{% endblock %}
+
+

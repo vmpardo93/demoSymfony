@@ -1,0 +1,56 @@
+#cabeza{
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    padding: 0 0;
+    background: #fff;
+}
+
+#primary {
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+}
+
+.site-layout-boxed  .container {
+    padding: 0 30px;
+}
+
+body.site-layout-boxed {
+    background: rgb(234, 234, 234);
+}
+
+body, button, input, select, textarea {
+    color: #0f0f0f;
+    font-size: 16px;
+    line-height: 1.75;
+    font-family: 'Roboto', sans-serif;
+}
+
+.subtitle{
+    margin: 0% 5%;
+}
+
+#posttitle{
+    display: flex;
+    justify-content: center;
+}
+
+#postprincipal{
+    display: flex;
+}
+
+#listapost{
+    width: 40%;
+}
+
+#contentpost{
+    width: 60%;
+}
+
+#imagepost{
+    height: 20%;
+}
