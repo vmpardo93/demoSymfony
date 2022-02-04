@@ -37,6 +37,11 @@ class Post
      */
     private $image;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=user::class, inversedBy="posts")
+     */
+    private $userCreator;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +91,18 @@ class Post
     public function setImage(string $image): self
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    public function getUserCreator(): ?user
+    {
+        return $this->userCreator;
+    }
+
+    public function setUserCreator(?user $userCreator): self
+    {
+        $this->userCreator = $userCreator;
 
         return $this;
     }
