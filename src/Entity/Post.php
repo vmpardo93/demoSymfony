@@ -38,7 +38,7 @@ class Post
     private $image;
 
     /**
-     * @ORM\ManyToOne(targetEntity=user::class, inversedBy="posts")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="posts")
      */
     private $userCreator;
 
